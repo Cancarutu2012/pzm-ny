@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radetzky FM</title>
+  <title>PázmányRádió</title>
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#ffffff" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Radetzky FM" />
-  <link rel="apple-touch-icon" href="public/icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-title" content="PázmányRádió" />
+  <link rel="apple-touch-icon" href="favicon.png"> <!-- Set the favicon.png as app icon -->
+
+  <!-- Favicon for browsers -->
+  <link rel="icon" href="favicon.png" type="image/png">
 
   <style>
     html, body {
@@ -23,7 +26,7 @@
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=100') no-repeat center center fixed;
+      background: url('APP.png') no-repeat center center fixed; /* Use APP.png as wallpaper */
       background-size: cover;
       font-family: sans-serif;
     }
@@ -50,7 +53,7 @@
   </style>
 </head>
 <body>
-  <div class="text">Radetzky FM</div>
+  <div class="text"></div>
 
   <audio controls autoplay>
     <source src="/api/proxy" type="audio/mpeg">
